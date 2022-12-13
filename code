@@ -1,0 +1,1366 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+   <!----
+     
+    © borntobewildthemes.tumblr.com | PORTFOLIO (bright)
+ 
+    + Do not redistribute this page or remove the credits.
+    + Edit as long as you keep the credits intact.
+    + Contact me if you have any questions or concerns.
+    + If you want a custom theme/page you can commission me.
+    + Thanks for using my page, I hope that you enjoy it.
+   
+    Other credits:
+
+    - Jquery 
+    - Google fonts
+    - Isotope Combination Filtering by Bev (@magnusthemes)
+   
+    ---->
+   
+<html>
+ 
+<head>
+ 
+<!--- Change the title of the page here --->
+ 
+<title>Downloads</title>
+ 
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!--- Google fonts --->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<style type="text/css">
+ 
+/* -------- BASICS ------- */
+ 
+body {
+    margin:0;
+    width:100%;
+    height:100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size:12px;  
+    color:#5f3535;
+    background: #f6eeee; 
+}
+ 
+/* Links */
+ 
+a {
+    text-decoration:none;
+    outline:none;
+}
+ 
+a:hover {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+ 
+/* Webkit scrollbar */
+ 
+::-webkit-scrollbar {
+    width: 9px;
+    height: 0px;
+}
+ 
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    height: 0px;
+    display: block;
+    background-color: #ffffff;
+}
+ 
+::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+    height: 0px;
+    background-color: #eeeeee;
+    border: 4px solid #ffffff;
+}
+
+/* Tumblr controls */
+ 
+iframe.tmblr-iframe {
+    bottom:-7px!important;
+    margin-top:auto;
+    right:40px!important;
+    padding:0px;
+    opacity:0.8;
+    transform:scale(0.6);
+    transform-origin:100% 0;
+    -webkit-transform:scale(0.8);
+    -webkit-transform-origin:100% 0;
+    -o-transform:scale(0.8);
+    -o-transform-origin:100% 0;
+    -moz-transform:scale(0.8);
+    -moz-transform-origin:100% 0;
+    -ms-transform:scale(0.8);
+    -ms-transform-origin:100% 0;
+    z-index:100000!important;
+}
+ 
+iframe.tmblr-iframe:hover {
+    opacity:1!important;
+}
+ 
+/* -------- MENU ------- */
+ 
+#menu {
+    margin-top:60;
+    margin-left:0;
+    width:calc(100% - 60px);
+    height:57px;
+    padding:0 30px;
+    background:#fafafa;
+    border-bottom:1px solid #eeeeee;
+    z-index:10;
+}
+ 
+/* Blog title */
+ 
+#blogtitle {
+    float:left;
+    margin-top:0px;
+    font-size:26px;
+    line-height:57px;
+    height:57px;
+    width:360px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color:#5f3535;
+}
+ 
+#blogtitle:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 40px;
+    height: 1px;
+    background-color:#eeeeee; 
+}
+
+/* Main links */
+ 
+#mainlinks {
+    float:right;
+    margin-top:0px;
+    height:57px;
+    line-height:57px;
+}
+ 
+#mainlinks a {
+    margin-right:5px;
+    padding: 4px 8px;
+    color: #5f3535;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+ 
+#mainlinks a:hover {
+    color: #cb5d5a;
+    border-top: 1px solid #cb5d5a;
+}
+
+/* -------- HEADER ------- */
+
+#header {
+    margin-top:0;
+    margin-left:0;
+    width:100%;
+    height:155px;
+    background:#ffffff;
+    /* Replace header background image */
+    background-image:url('https://78.media.tumblr.com/be664c89db2b4f8fa5d25457dbfcbb6b/tumblr_pd3jx0WRHy1w4d880o1_500h.jpg');
+    background-size:cover;
+    background-position:center;
+    border-bottom:1px solid #eeeeee;
+    z-index:10;   
+}
+
+/* -------- DESCRIPTION ------- */
+
+#description {
+    margin-top:0;
+    margin-left:0;
+    width:calc(100% - 60px);
+    height:auto;
+    padding:30px;
+    color:#333333;
+    background:#ffffff;
+    border-bottom:1px solid #eeeeee;
+    font-size:14px;
+    line-height:22px;
+    text-align:center;
+    z-index:10;       
+}
+
+/* -------- STICKY ------- */
+
+#sticky {
+    margin-top:0;
+    margin-left:0;
+    width:100%;
+    height:1px;
+    z-index:10;     
+}
+
+/* -------- CONTAINER ------- */
+
+#maincontainer {
+    margin:0;
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    min-height:100vh;
+}
+
+/* -------- SORTING CONTENT ------- */
+
+/* Sort box style */
+ 
+#sort {
+    position:absolute;    
+    left:15px;
+    margin-top:15px;
+    width:200px;
+    height:auto;  
+    height:calc(100vh - 60px);
+    padding:10px 15px;
+    /* Change background color of sorting container */
+    background:#fafafa;
+    overflow-y:auto;
+    z-index:10000;
+}
+
+#sort ul {
+    list-style: none;
+    margin-top:0px;
+    margin-left:0px;
+    width:195px;
+    padding:0px;
+}
+
+/* Sort title */
+
+#sort h2 {
+    margin:5px 0;
+    padding:5px;
+    font-size:18px;
+    color:#5f3535;
+    border-bottom:1px solid #eeeeee;
+    cursor:pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Sort link style */
+ 
+#sort a {
+    display:block;
+    margin-left:15px;
+    width:170px;
+    padding:3px 5px;
+    font-size:15px;
+    color:#5f3535;
+}
+ 
+#sort a:hover {
+    color:#de726f;
+}
+
+#sort li {
+    list-style:none;
+}
+ 
+#sort li a.selected {
+    color:#cb5d5a;
+}
+
+.stickysort {
+    top:-15px;
+    position:fixed!important;
+}
+
+/* -------- CONTENT CONTAINER ------- */
+
+.grid {
+    margin-left:265px;
+    margin-top:15px;
+    width:calc(100vw - 296px);
+    padding-bottom:30px;   
+    z-index:100;
+}
+
+/* Item (content container) */
+
+.grid .item {
+    display: block;
+    float: left;
+    margin: 0 1% 2%;
+    width: 23%;
+    padding:20px;
+    /* Change background color of content container */
+    background: #ffffff;
+    box-sizing: border-box;
+    -moz-transition-duration:1s;
+    -webkit-transition-duration:1s;    
+    -o-transition-duration:1s;  
+}
+
+/* Image style */
+ 
+.grid img {
+    width:100%;
+    height:auto;
+}
+
+/* Content container info */
+
+.info {
+    margin-top:15px;
+    margin-left:-1px;
+    width:100%;
+}
+
+/* Info heading */
+
+.info h2 {
+    margin:0;
+    color:#5f3535;
+    padding-bottom:5px;
+    font-size:14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.info h2:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 40px;
+    height: 1px;
+    background-color:#eeeeee; 
+}
+
+/* Info description */
+
+.infodesc {
+    margin:10px 0;
+    color:#5f3535;
+    font-size:12px;
+    line-height:18px;
+}
+
+/* Info links */
+
+.infolinks {
+    text-align: center;
+}
+
+.infolinks a {
+    display:inline-block;
+    margin:5px;
+    margin-left:0;
+    padding:4px 8px;
+    font-size:12px;
+    border-radius:2px;
+    z-index:100;
+}
+
+/* First info link style */
+
+.styleone {
+    color:#5f3535;
+    border:1px solid #cb5d5a;
+}
+
+.styleone:hover {
+    background:#cb5d5a;
+}
+
+/* Second info link style */
+
+.styletwo {
+    color:#5f3535;
+    border:1px solid #f6acac;
+}
+
+.styletwo:hover {
+    background:#f6acac;
+}
+
+/* Third info link style */
+
+.stylethree {
+    color:#5f3535;
+    border:1px solid #eeeeee;
+}
+
+.stylethree:hover {
+    background:#eeeeee;
+}
+
+/* First label */
+
+.labelone {
+    position:absolute;
+    top:10px;
+    right:0px;
+    width:60px;
+    padding:4px 8px;
+    text-align:center;
+    color:#5f3535;
+    font-size:14px;
+    z-index:100;
+    background:#cb5d5a;
+}
+
+/* Second label */
+ 
+.labeltwo {
+    position:absolute;
+    top:10px;
+    right:0px;
+    width:60px;
+    padding:4px 8px;
+    text-align:center;
+    color:#5f3535;
+    font-size:14px;
+    z-index:100;
+    background:#f6acac;
+}
+
+/* Third label */
+ 
+.labelthree {
+    position:absolute;
+    top:10px;
+    right:0px;
+    width:60px;
+    padding:4px 8px;
+    text-align:center;
+    color:#5f3535;
+    font-size:14px;
+    z-index:100;
+    background:#eeeeee;
+}
+ 
+#item:hover {
+    -moz-transition-duration:1s;
+    -webkit-transition-duration:1s;    
+    -o-transition-duration:1s;  
+}
+
+.selected {
+  color: #5f3535;
+  border-bottom-color: #de726f;
+  font-weight: bold;
+}
+
+/* ----------------------- CREDITS ----------------------------- */
+ 
+#credit {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    z-index:100000;
+}
+   
+#credit img{
+    border:1px solid #eeeeee;
+    max-width:25px;
+}
+ 
+</style>
+
+<!-------------------------------- SCRIPTS -------------------------------->
+
+<!-- Jquery -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!-- Sticky -->
+
+<script type="text/javascript">
+$(function(){
+var stickyRibbonTop = $('#sticky').offset().top;
+$(window).scroll(function(){
+if( $(window).scrollTop() > stickyRibbonTop ) {
+   
+    $('#sort').addClass("stickysort");
+    } else {
+    $('#sort').removeClass("stickysort");
+    }
+    });
+   
+});
+</script>
+ 
+<!-- Filter scripts -->
+
+<script src="https://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script>
+ 
+ <script>
+$(document).ready(function() {
+  var $container = $(".grid"); // the container with all the elements to filter inside
+  var filters = {}; //should be outside the scope of the filtering function
+
+  /* --- read the documentation on isotope.metafizzy.co for more options --- */
+  var $grid = $container.isotope({
+    itemSelector: ".item", // the elements to filter
+    percentPosition: true // true if you use percentage widths
+  });
+
+  // save some classes for later usage
+  /* ---
+  activeClass: adds this class to filters that are selected (active)
+  comboClass: the class that indicates that the filter group is a chain filter, i.e. if you select two filters, only items with BOTH filters will be shown
+  exclClass: the class that indicates that the filter group is an exclusion filter, i.e. you can only select one filter from that group at a time
+  resetClass: the class for the overall reset button
+  --- */
+  var activeClass = "selected",
+    comboClass = "combine",
+    exclClass = "exclusive",
+    resetClass = "reset";
+
+  var $defaults = $("a." + activeClass + '[data-filter-value=""]');
+  $(".option-set a").click(function(e) {
+    // insert your link selector where it says '.option-set a'
+    var $this = $(this); // cache the clicked link
+    var comboFilter,
+      filterAttr = "data-filter-value";
+    if (resetClass && !$this.hasClass(resetClass)) {
+      // defining variables
+      var filterValue = $this.attr(filterAttr); // cache the filter
+      var $optionSet = $this.parents(".option-set"); // cache the parent element
+      var group = $optionSet.attr("data-filter-group"); // cache the parent filter group
+      var filterGroup = filters[group]; // make new variable for the property being filtered
+      if (!filterGroup) {
+        // if the property doesn't exist
+        filterGroup = filters[group] = []; // make a new empty array
+      }
+      var $selectAll = $optionSet.find("a[" + filterAttr + '=""]'); // cache the 'select all' button in the current group
+      $("." + resetClass).removeClass(activeClass);
+      comboFiltering(
+        $this,
+        filters,
+        filterAttr,
+        filterValue,
+        $optionSet,
+        group,
+        $selectAll,
+        activeClass,
+        comboClass,
+        exclClass
+      );
+      comboFilter = getComboFilter(filters); // join all the filters
+      if (!comboFilter.length) $("a." + resetClass).addClass(activeClass);
+      $this.toggleClass(activeClass);
+    } else {
+      filters = {};
+      comboFilter = "";
+      $(".option-set a").removeClass(activeClass);
+      $(this).addClass(activeClass);
+      $defaults.addClass(activeClass);
+    }
+    $grid.isotope({
+      filter: comboFilter
+    });
+    e.preventDefault();
+  });
+});
+function comboFiltering(
+  $this,
+  filters,
+  filterAttr,
+  filterValue,
+  $optionSet,
+  group,
+  $selectAll,
+  activeClass,
+  comboClass,
+  exclClass
+) {
+  // for non-exclusive groups of filters
+  if (!$optionSet.hasClass(exclClass)) {
+    // replace 'exclusive' with the class of your exclusive filter groups
+    // if link is a filter that isn't selected
+    if (!$this.hasClass(activeClass) && filterValue.length) {
+      filters[group].push(filterValue); // add filter to array
+      $selectAll.removeClass(activeClass); // remove the selected class from the 'select all' button
+    } else if (filterValue.length) {
+      // if link is a selected filter
+      // remove filter from array
+      // check if the filter group we're concerned with is a combination filter (.one.two instead of .one,.two)
+      if ($optionSet.hasClass(comboClass)) {
+        filters[group][0] = filters[group][0].replace(filterValue, ""); // delete the filter from the combined string
+        if (!filters[group][0].length)
+          // check if there is anything left in the string after deletion
+          filters[group].splice(0, 1); // if no, remove the empty string
+      } else {
+        // if filter group is not a combo filter
+        var curIndex = filters[group].indexOf(filterValue); // get index of filter string in array
+        if (curIndex > -1) filters[group].splice(curIndex, 1); // remove the filter
+      }
+      if (!$optionSet.find("a." + activeClass).not($this).length)
+        // if there are no remaining filters
+        $selectAll.addClass(activeClass); // add the active class to the 'select all' button
+    } else {
+      // if link is the show all button for that group
+      $optionSet.find("a." + activeClass).removeClass(activeClass); // remove the active class from all other buttons
+      filters[group] = []; // clear the array of all filters
+    }
+    // join everything to a single string for the combined filtering groups
+    if ($optionSet.hasClass(comboClass) && filters[group].length)
+      filters[group] = [filters[group].join("")];
+  } else {
+    // for exclusive groups
+    // if link is a filter that isn't selected
+    if (!$this.hasClass(activeClass) && filterValue.length) {
+      // run a loop for all active filters
+      $optionSet.find("a." + activeClass).each(function(k, filterLink) {
+        // remove all active filters in the same group from the array
+        var removeFilter = $(filterLink).attr(filterAttr);
+        var removeIndex = filters[group].indexOf(removeFilter);
+        filters[group].splice(removeIndex, 1);
+      });
+      filters[group].push(filterValue); // add selected filter to array
+      $optionSet.find("a." + activeClass).removeClass(activeClass); // remove the active class from all other links in the group
+    } else if (filterValue.length) {
+      // if link is a selected filter
+      // remove filter from array
+      var curIndex = filters[group].indexOf(filterValue);
+      if (curIndex > -1) filters[group].splice(curIndex, 1);
+      if (!$optionSet.find("a." + activeClass).not($this).length)
+        // if there are no remaining filters
+        $selectAll.addClass(activeClass); // add active class to 'select all' button
+    } else {
+      // if link is the show all button for that group
+      $optionSet.find("a." + activeClass).removeClass(activeClass); // remove active class from all other buttons
+      filters[group] = []; // reset all filters for this group
+    }
+  }
+}
+/* --- concat filters --- */
+function getComboFilter(filters) {
+  // pass the entire array of filters to the function
+  var i = 0; // set counter variable as zero
+  var comboFilters = []; // make a new array to save the string of filters
+
+  for (var prop in filters) {
+    // loop through all the properties in the filter array passed to the function
+    var filterGroup = filters[prop]; // define variable
+    // skip to next filter group if it doesn't have any values
+    if (!filterGroup.length) {
+      continue; // exit loop and move on with next iteration
+    }
+    if (i === 0) {
+      // copy to new array
+      comboFilters = filterGroup.slice(0);
+    } else {
+      var filterSelectors = [];
+      // copy to fresh array
+      var groupCombo = comboFilters.slice(0);
+      // merge filter Groups
+      for (var k = 0, len3 = filterGroup.length; k < len3; k++) {
+        for (var j = 0, len2 = groupCombo.length; j < len2; j++) {
+          filterSelectors.push(groupCombo[j] + filterGroup[k]);
+        }
+      }
+      // apply filter selectors to combo filters for next group
+      comboFilters = filterSelectors;
+    }
+    i++; // increment
+  }
+
+  var comboFilter = comboFilters.join(", ");
+  return comboFilter;
+}
+
+ </script>
+ 
+ <!--end filter scripts-->
+ 
+ <script>
+$(document).ready(function(){
+    
+  $("#title1").click(function(){
+    $("#box1").slideToggle(500);
+  });
+  
+  $("#title2").click(function(){
+    $("#box2").slideToggle(500);
+  });
+  
+  $("#title3").click(function(){
+    $("#box3").slideToggle(500);
+  });
+  
+});
+</script>
+
+<!-- Icons -->
+<script src="https://kit.fontawesome.com/6ad31bbb0e.js" crossorigin="anonymous"></script>
+ 
+<meta charset="utf-8">
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+ 
+</head>
+ 
+<body>
+
+<!-- Menu -->  
+<div id="menu">
+    <div id="blogtitle">My Custom Content</div>  
+    <div id="mainlinks">
+        <a href="/"><i class="fas fa-home"></i> Home</a>
+        <a href="/tou"><i class="fas fa-exclamation-triangle"></i> Terms Of Use</a>
+    </div>
+</div>
+<!-- End menu -->
+
+<div id="sticky"></div>
+ 
+<div id="maincontainer">
+
+<div id="sort">
+
+  <div class="filters">
+  
+<!----------  Filter links. Here you add tags as ".theme", ".sidebar", ".onecolumn" etc. Replace labelone, labeltwo and labelthree with your own labels ---------->
+
+    <li class="option-set"><a href="#" data-filter-value="" class="reset selected">All</a></li>
+    <!--li class="option-set"><a href="#" data-filter-value=".favorite">Favorites</a></li-->
+
+    <ul class="filter option-set exclusive" data-filter-group="labelone">
+      <li><h2>The Sims 4</h2></li>
+      <li><a href="#" data-filter-value=".tagone" class="selected">All</a></li>
+      <li><a href="#" data-filter-value=".tagtwo">Accessories</a></li>
+      <li><a href="#" data-filter-value=".tagthree">Clothes</a></li>
+      <li><a href="#" data-filter-value=".tagfour">Facial hair</a></li>
+      <li><a href="#" data-filter-value=".tagfive">Hairstyles</a></li>
+    </ul>
+
+    <ul class="filter option-set exclusive" data-filter-group="labeltwo">
+      <li><h2>The Sims 3</h2></li>
+      <li><a href="#" data-filter-value=".tagsix" class="selected">All</a></li>
+      <li><a href="#" data-filter-value=".tagseven">Accessories</a></li>
+      <li><a href="#" data-filter-value=".tageight">Shoes</a></li>
+    </ul>
+
+    <ul class="filter option-set exclusive" data-filter-group="labelthree">
+      <li><h2>Dragon Age: Origins</h2></li>
+      <li><a href="#" data-filter-value=".tagnine" class="selected">All</a></li>
+      <li><a href="#" data-filter-value=".tagten">Retextures</a></li>
+    </ul>
+
+  </div>
+<!-- End filters-->
+
+</div>
+<!-- End sort -->
+
+
+<div class="grid">
+
+<!---------- Content containers
+ 
+in class="item tagone"  "tagone" is actually a tag you can add, to add more tags for the same tv show simply put "tagone tagtwo tagthree" for example:  class="item theme sidebar onecolumn". I suggest you writing two word tags as one word.
+ 
+---------->
+
+<!-------------------------------------------------------------------------------->
+<!----------------------------------- Group 1 ------------------------------------>
+<!-------------------------------------------------------------------------------->
+
+<!-- Item -->
+
+<div class="item tagone tagfive">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelone">TS4</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/KqhDaIg.jpg"></a>
+
+<div class="info"> 
+
+<h2>Leliana hairstyle</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/161857003837/leliana-hairstyle-for-the-sims-4-converted-from" class="styleone" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagone tagfive">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelone">TS4</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/JFlaqCj.jpg"></a>
+
+<div class="info"> 
+
+<h2>Morrigan hairstyle</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/162102722612/morrigan-hairstyle-for-the-sims-4-converted-from" class="styleone" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagone tagfive">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelone">TS4</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/6VukWJ2.jpg"></a>
+
+<div class="info"> 
+
+<h2>Cullen hairstyle</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/162399548357/cullen-hairstyle-for-the-sims-4-converted-from" class="styleone" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagone tagfive">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelone">TS4</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/qqed9Ml.jpg"></a>
+
+<div class="info"> 
+
+<h2>Cassandra hairstyle</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/164640711077/cassandra-hairstyle-for-the-sims-4-converted-from" class="styleone" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagone tagfour tagfive">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelone">TS4</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/s5TjYdK.jpg"></a>
+
+<div class="info"> 
+
+<h2>Dorian hairstyle & moustache</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/166083313737/dorian-hairstyle-moustache-for-the-sims-4" class="styleone" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagone tagfive">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelone">TS4</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/ElJwZtp.jpg"></a>
+
+<div class="info"> 
+
+<h2>Sera hairstyle</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/169397288157/sera-hairstyle-for-the-sims-4-converted-from" class="styleone" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagone tagfive">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelone">TS4</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/l0inJnE.jpg"></a>
+
+<div class="info"> 
+
+<h2>Varric hairstyle</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/175210703912/varric-hairstyle-for-the-sims-4-converted-from" class="styleone" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagone tagtwo">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelone">TS4</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/zFpDwNA.jpg"></a>
+
+<div class="info"> 
+
+<h2>Solas necklace</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/177425793542/solas-necklace-for-the-sims-4-converted-from" class="styleone" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagone tagfive">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelone">TS4</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/Fp4LsYP.jpg"></a>
+
+<div class="info"> 
+
+<h2>Cole hairstyle</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/179787575757/cole-hairstyle-for-the-sims-4-converted-from" class="styleone" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagone tagthree">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelone">TS4</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/kg4rz1g.jpg"></a>
+
+<div class="info"> 
+
+<h2>Kainé lingerie</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/171660835852/kain%C3%A9-lingerie-for-the-sims-4-converted-from-nier" class="styleone" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagone tagthree">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelone">TS4</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/eHZH4k7.jpg"></a>
+
+<div class="info"> 
+
+<h2>Hogwarts cardigans</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/173457183602/hogwarts-cardigans-for-the-sims-4-i-know-this-have" class="styleone" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagone tagthree">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelone">TS4</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/Sdtka2j.jpg"></a>
+
+<div class="info"> 
+
+<h2>Hermione dress</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/187353291517/hermione-dress-for-the-sims-4-new-mesh-by-me-12" class="styleone" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-------------------------------------------------------------------------------->
+<!----------------------------------- Group 2 ------------------------------------>
+<!-------------------------------------------------------------------------------->
+
+<!-- Item -->
+
+<div class="item tagsix tageight">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labeltwo">TS3</div>
+
+<!-- Image -->
+<img src="https://66.media.tumblr.com/e5d02422c5f58bbc88bb12c9945c58f6/041fbfc29cfb941b-d9/s500x750/987ac19c8e02b96a16424e9cf1c199fe0bf01a81.jpg"></a>
+
+<div class="info"> 
+
+<h2>Luffy's flip-flops</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/57882498065/monkey-d-luffy-flip-flops-3d-shoes-with-blooms" class="styletwo" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagsix tagseven">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labeltwo">TS3</div>
+
+<!-- Image -->
+<img src="https://66.media.tumblr.com/91dc60303a781dea43e0370f15920716/1e20c58c7945606b-f1/s500x750/a86b821d95f36572077837503c8e0637e60e30aa.jpg"></a>
+
+<div class="info"> 
+
+<h2>Luffy’s hat</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/60778935085/monkey-d-luffys-hat" class="styletwo" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagsix tagseven">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labeltwo">TS3</div>
+
+<!-- Image -->
+<img src="https://66.media.tumblr.com/6df0249e166ff894cb2318c14b1dd5e2/tumblr_inline_pcul2bCICa1s6ivbw_500.jpg"></a>
+
+<div class="info"> 
+
+<h2>Nami’s Clima Tact</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/75253281955/namis-clima-tact" class="styletwo" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+
+<!-- Item -->
+
+<div class="item tagsix tagseven">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labeltwo">TS3</div>
+
+<!-- Image -->
+<img src="https://66.media.tumblr.com/10e4ec45c010578800e0e19f79132221/tumblr_inline_pcul2bZbs51s6ivbw_500.jpg"></a>
+
+<div class="info"> 
+
+<h2>Nami’s Log Pose</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://kaizoku-gal.tumblr.com/post/91382189002/namis-log-pose" class="styletwo" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+<!-------------------------------------------------------------------------------->
+<!----------------------------------- Group 3 ------------------------------------>
+<!-------------------------------------------------------------------------------->
+
+<!-- Item -->
+
+<div class="item tagnine tagten">
+
+<!-- Label (here you can put the price, "new", "favorite" etc) -->
+<div class="labelthree">DAO</div>
+
+<!-- Image -->
+<img src="https://i.imgur.com/7g3Ikhu.jpg"></a>
+
+<div class="info"> 
+
+<h2>Duncan's Armor</h2>
+
+<div class="infodesc"></div>
+<!-- End infodesc -->
+
+<div class="infolinks">
+
+<a href="https://www.nexusmods.com/dragonage/mods/4602/" class="stylethree" target="_blank">Download page</a>
+
+</div>
+<!-- End infolinks -->    
+
+</div>
+<!-- End info -->
+
+</div>
+<!----------------------------------- End item ----------------------------------->
+
+<!---------- Item (content containers) end here. To add more copy 
+
+
+<div class="item tagfour tagsix tagnine ">
+
+<div class="labelone"> label </div>
+
+<img src="https://vignette.wikia.nocookie.net/the-darkest-minds/images/4/47/Placeholder.png/revision/latest?cb=20160927044640"></a>
+
+<div class="info"> 
+
+<h2> Title </h2>
+
+<div class="infodesc">
+
+Lorem ipsum dolor sit amet. Consectetuer adipiscing elit. Nam at tortor quis ipsum tempor aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+
+</div>
+
+
+<div class="infolinks">
+
+<a href="http://" class="styleone"> link </a>
+<a href="http://" class="styleone"> link </a>
+<a href="http://" class="styletwo"> link </a>
+
+</div>
+
+</div>
+
+</div>
+
+
+and paste it above or below this comment. -------->
+
+
+</div>
+<!-- End grid -->
+
+</div>
+<!--End maincontainer-->
+ 
+<!--CREDIT (DO NOT REMOVE)--> 
+<div id="credit"><a href="http://borntobewildcodes.tumblr.com" title="page PORTFOLIO by @borntobewildcodes"><img src="https://i.imgur.com/YsnOAtA.png"></a></div>
+ 
+</body>
+ 
+ 
+</html>
